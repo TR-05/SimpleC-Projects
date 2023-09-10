@@ -7,7 +7,7 @@ char continueGame();
 
 int main()
 {
-    std::cout << "3 Games of Rock Paper Scissors!\n";
+    std::cout << "Game of Rock Paper Scissors!\n";
     for (int i = 0; i <= 2; i ++) {
     char player = getPlayerChoice();
     char cpu = getCpuChoice();
@@ -32,9 +32,9 @@ char getPlayerChoice() {
         std::cin >> player;
     }while (player != 'r' && player != 'p' && player != 's');
         switch(player) {
-            case 'r': std::cout << "You chose rock! "; break;
-            case 'p': std::cout << "You chose paper! "; break;
-            case 's': std::cout << "You chose scissors! "; break;
+            case 'r': std::cout << "You chose rock, "; break;
+            case 'p': std::cout << "You chose paper, "; break;
+            case 's': std::cout << "You chose scissors, "; break;
         }
 
     return player;
